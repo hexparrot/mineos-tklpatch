@@ -1,0 +1,6 @@
+#!/bin/bash -ex
+
+#global aliases
+echo "alias ll='ls -la'" >> /etc/bash.bashrc
+
+chmod +x /usr/games/minecraft/{generate-sslcert.sh,mineos_console.py,server.py}

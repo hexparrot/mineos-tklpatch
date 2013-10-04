@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+update-rc.d mineos defaults
+update-rc.d minecraft defaults
+
+cd /usr/games/minecraft
+./generate-sslcert.sh
+git config core.filemode false

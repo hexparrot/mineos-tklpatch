@@ -1,0 +1,28 @@
+#!/bin/bash -ex
+install()
+{
+    DEBIAN_FRONTEND=noninteractive apt-get -y \
+        -o DPkg::Options::=--force-confdef \
+        -o DPkg::Options::=--force-confold \
+        install $@
+}
+
+sid()
+{
+    DEBIAN_FRONTEND=noninteractive apt-get -f -y -t sid \
+        -o DPkg::Options::=--force-confdef \
+        -o DPkg::Options::=--force-confold \
+        install $@
+}
+
+apt-get update
+install screen
+install rdiff-backup
+install git
+install mysql-server
+install openjdk-7-jre
+install python
+install python-cherrypy3
+
+#echo "deb http://http.us.debian.org/debian sid main" >> /etc/apt/sources.list.d/sources.list
+#sid python2.7

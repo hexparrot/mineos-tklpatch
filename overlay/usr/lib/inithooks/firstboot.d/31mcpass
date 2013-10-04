@@ -1,0 +1,10 @@
+#!/bin/bash -e
+# set mc password
+
+useradd -m -s /bin/bash mc
+
+. /etc/default/inithooks
+
+[ -e $INITHOOKS_CONF ] && . $INITHOOKS_CONF
+$INITHOOKS_PATH/bin/setpass.py mc --pass="$MC_PASS"
+
