@@ -3,7 +3,7 @@ mineos-tklpatch
 
 Turnkey Linux patch for easily extending Applicances
 
-Follow the foloowing instructions as root on a turnkey-based distribution, preferably. To create your own ISO:
+Follow these instructions as root on a turnkey-based distribution, preferably. To create your own ISO:
 
     apt-get update
     apt-get install tklpatch git
