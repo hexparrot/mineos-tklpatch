@@ -5,4 +5,11 @@ update-rc.d minecraft defaults
 
 cd /usr/games/minecraft
 ./generate-sslcert.sh
+
+git init
+git remote add origin https://github.com/hexparrot/mineos
 git config core.filemode false
+
+mkdir -p /var/games/minecraft/profiles
+touch /var/games/minecraft/profiles/profile.config
+chgrp mc /var/games/minecraft/profiles/profile.config
