@@ -13,3 +13,5 @@ git config core.filemode false
 mkdir -p /var/games/minecraft/profiles
 touch /var/games/minecraft/profiles/profile.config
 chgrp mc /var/games/minecraft/profiles/profile.config
+
+ln -s /usr/games/minecraft/mineos_console.py /usr/local/bin/mineos
