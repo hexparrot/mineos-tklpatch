@@ -15,9 +15,9 @@ sid()
         install $@
 }
 
-apt-get update
+curl -sL https://deb.nodesource.com/setup_0.12 | bash -
+#apt-get update  #executed already by above curl script
 install nodejs
-install nodejs-legacy
 install npm
 install git
 install screen
