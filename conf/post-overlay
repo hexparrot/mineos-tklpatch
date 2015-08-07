@@ -7,4 +7,4 @@ cd /usr/games
 git clone --depth=1 https://github.com/hexparrot/mineos-node minecraft
 cd minecraft
 chmod +x generate-sslcert.sh mineos_console.js service.js webui.js
-npm install --all
+npm install --all || true
