@@ -4,4 +4,4 @@
 echo "alias ll='ls -la'" >> /etc/bash.bashrc
 
 rm /usr/games/minecraft/.git
-chmod +x /usr/games/minecraft/{generate-sslcert.sh,mineos_console.py,server.py}
+chmod +x /usr/games/minecraft/{generate-sslcert.sh,mineos_console.js,service.js,webui.js}

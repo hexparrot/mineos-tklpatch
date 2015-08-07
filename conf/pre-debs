@@ -16,13 +16,16 @@ sid()
 }
 
 apt-get update
+install nodejs
+install nodejs-legacy
+install npm
+install git
 install screen
 install rdiff-backup
 install git
 install mysql-server
 install openjdk-7-jre
-install python
-install python-cherrypy3
+install supervisor
 
 #echo "deb http://http.us.debian.org/debian sid main" >> /etc/apt/sources.list.d/sources.list
 #sid python2.7

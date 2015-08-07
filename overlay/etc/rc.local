@@ -12,7 +12,4 @@
 # By default this script does nothing.
 
 iptables-restore < /etc/iptables-rules
-service mineos start
-service minecraft start
-echo 3 > /proc/sys/vm/drop_caches
 exit 0

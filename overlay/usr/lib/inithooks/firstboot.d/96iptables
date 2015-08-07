@@ -5,7 +5,7 @@ iptables -P INPUT ACCEPT
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
-iptables -A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
+iptables -A INPUT -p tcp -m tcp --dport 8443 -j ACCEPT
 
 iptables -A INPUT -p tcp -m tcp --dport 12320 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 12321 -j ACCEPT

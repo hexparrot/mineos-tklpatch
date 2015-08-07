@@ -1,6 +1,6 @@
 SSH/SFTP:   root@$ipaddr (port 22)
 Minecraft:  $ipaddr:25565
 
-MineOS Web-Ui: https://$ipaddr:8080
+MineOS Web-Ui: https://$ipaddr:8443
 Web shell:  https://$ipaddr:12320
 Webmin:     https://$ipaddr:12321
