@@ -1,3 +1,0 @@
-[submodule "overlay/usr/games/minecraft"]
-	path = overlay/usr/games/minecraft
-	url = https://github.com/hexparrot/mineos.git
