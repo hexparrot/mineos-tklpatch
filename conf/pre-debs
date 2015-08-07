@@ -26,6 +26,7 @@ install git
 install mysql-server
 install openjdk-7-jre
 install supervisor
+install build-essential
 
 #echo "deb http://http.us.debian.org/debian sid main" >> /etc/apt/sources.list.d/sources.list
 #sid python2.7
