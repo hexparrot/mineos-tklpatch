@@ -3,4 +3,6 @@
 #global aliases
 echo "alias ll='ls -la'" >> /etc/bash.bashrc
 
-chmod +x /usr/games/minecraft/{generate-sslcert.sh,mineos_console.js,service.js,webui.js}
+cd /usr/games
+git clone --depth=1 https://github.com/hexparrot/mineos-node minecraft
+chmod +x minecraft/{generate-sslcert.sh,mineos_console.js,service.js,webui.js}
