@@ -7,6 +7,7 @@ cd /usr/games/minecraft
 #git remote add origin https://github.com/hexparrot/mineos-node
 git config core.filemode false
 
-mkdir -p /var/games/minecraft/
+mkdir -p /var/games/minecraft/import
+chown -R root:mc /var/games/minecraft/import
 
 ln -s /usr/games/minecraft/mineos_console.js /usr/local/bin/mineos
