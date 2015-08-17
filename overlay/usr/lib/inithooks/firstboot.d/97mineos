@@ -9,5 +9,6 @@ git config core.filemode false
 
 mkdir -p /var/games/minecraft/import
 chown -R root:mc /var/games/minecraft/import
+chmod -R g+w /var/games/minecraft/import
 
 ln -s /usr/games/minecraft/mineos_console.js /usr/local/bin/mineos
