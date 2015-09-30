@@ -8,7 +8,12 @@ git clone --depth=1 https://github.com/hexparrot/mineos-node minecraft
 cd minecraft
 chmod +x generate-sslcert.sh mineos_console.js service.js webui.js
 cp mineos.conf /etc/mineos.conf
+npm install --all || true
 
-source ~/.profile || true
-nvm use 4.0
-npm install || true
+mkdir -p /usr/src
+cd /usr/src
+wget https://download.samba.org/pub/rsync/src/rsync-3.1.1.tar.gz
+tar -xf rsync-3.1.1.tar.gz
+cd rsync-3.1.1
+./configure
+make install
