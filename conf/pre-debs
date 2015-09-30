@@ -15,10 +15,11 @@ sid()
         install $@
 }
 
-curl -sL https://deb.nodesource.com/setup_0.12 | bash -
-#apt-get update  #executed already by above curl script
-install nodejs
-install npm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.27.1/install.sh | bash
+source ~/.profile || true
+nvm install 4.0
+
+apt-get update
 install git
 install screen
 install rdiff-backup
