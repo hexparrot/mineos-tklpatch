@@ -6,11 +6,11 @@ echo "alias ll='ls -la'" >> /etc/bash.bashrc
 cd /usr/games
 git clone --depth=1 https://github.com/hexparrot/mineos-node minecraft
 cd minecraft
+git config core.filemode false
 chmod +x generate-sslcert.sh mineos_console.js service.js webui.js
 cp mineos.conf /etc/mineos.conf
-source ~/.profile || true
-nvm use 4.0
-npm install || true
+npm install
+ln -s /usr/games/minecraft/mineos_console.js /usr/local/bin/mineos
 
 mkdir -p /usr/src
 cd /usr/src

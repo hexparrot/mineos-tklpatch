@@ -15,15 +15,12 @@ sid()
         install $@
 }
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.27.1/install.sh | bash
-source ~/.profile || true
-nvm install 4.0
-
+script -c "curl -sL https://deb.nodesource.com/setup_4.x | bash -" /dev/null
 apt-get update
 install git
 install screen
 install rdiff-backup
-install git
+install nodejs
 install mysql-server
 install openjdk-7-jre
 install supervisor
